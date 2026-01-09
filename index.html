@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="container">
+          <form class="formulario" id="formLogin">
+            <h1>WB</h1>
+            <div class="caixa-de-entrada">
+                <input placeholder="E-mail" type="email" required>
+                <img src="publico/imgs/usuario.png" class="icon-input" alt="user">
+            </div>
+            <div class="caixa-de-entrada">
+                <input placeholder="Senha" type="password" required>
+                <img src="publico/imgs/senha.png" class="icon-input" alt="password">
+            </div>
+            <div class="lembrar-esquecer-senha">
+                <label>
+                    <input type="checkbox">
+                    Mantenha-me logado
+                </label>
+                <a href="#">Esqueci senha</a>
+            </div>
+            
+            <button type="submit" class="bnt-login" id="btnLogar">Login</button>
+            
+            <p id="mensagem-feedback" style="display: none; text-align: center; margin-top: 15px; font-size: 0.85em; font-weight: 600;"></p>
+
+            <div class="link-de-registro">
+                <p>Não tem uma conta? <a href="#">Cadastre-se!</a></p>
+            </div>
+          </form>  
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(#2FC0C0, #13EBEB, #3E9696);
+}
+
+.container {
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    color: #fff;
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.container h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.caixa-de-entrada {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 25px 0;
+    border-bottom: 2px solid #fff;
+}
+
+.caixa-de-entrada input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #fff;
+    padding-right: 35px;
+}
+
+.caixa-de-entrada input::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.icon-input {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+}
+
+.lembrar-esquecer-senha {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9em;
+    margin-bottom: 25px;
+}
+
+.lembrar-esquecer-senha label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.lembrar-esquecer-senha input {
+    accent-color: #fff;
+}
+
+.lembrar-esquecer-senha a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.bnt-login {
+    width: 100%;
+    height: 45px;
+    background-color: #fff;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #333;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.bnt-login:hover {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.link-de-registro {
+    font-size: 0.9em;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.link-de-registro a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
