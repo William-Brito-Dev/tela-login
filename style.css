@@ -11,6 +11,53 @@ body {
     align-items: center;
     min-height: 100vh;
     background: linear-gradient(#2FC0C0, #13EBEB, #3E9696);
+    position: relative;
+}
+
+.main-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 0;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.logo {
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.95em;
+    font-weight: 400;
+    transition: 0.3s;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-links a:hover {
+    border-bottom: 2px solid #fff;
 }
 
 .container {
@@ -22,6 +69,7 @@ body {
     color: #fff;
     padding: 40px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    margin-top: 60px;
 }
 
 .container h1 {
